@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Práctica 1 Parcial 2</title>
+	<style type="">
+		table{
+			margin: auto;
+		}
+		td{
+			font-family: arial;
+			color: white;
+		}
+
+	</style>
+</head>
+<body style="background-image: url('https://th.bing.com/th/id/R.08dac58fedf3d1e6caf4e7abb6845ab1?rik=b8JuEn4p6FSaJQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-IcWLHPBcr20%2fTyw5Ix6pzaI%2fAAAAAAAAAz0%2fIQLRSdBTNMs%2fs1600%2f2-Cute%2bDog%2b1600x1200.jpg&ehk=k3D%2btUudyWz4blt59KzEPcAriOREIlcRJ2EXKtddjhs%3d&risl=&pid=ImgRaw&r=0'); background-size: 100%; background-position: center;">
+	<header style="text-align: center; color: yellow; font-family: Berlin Sans FB;">
+		<h1>Centro de adopción</h1>
+		<h2>Registro para trabajo</h2>
+	</header>
+	
+	<form action="" method="post" enctype="text/plain">
+		<fieldset>
+			<legend style="font-family: calibri; color: white;">Información general para el sistema</legend>
+		<table>
+		<tbody>
+		<tr>	
+			<td><label for="nombre">Nombre: </label>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre" size="15" maxlength="30" title="Nombre" required></td>
+
+			<td><label for="apellidop">Apellido paterno: </label>
+			<input type="text" name="apellidop" id="apellidop" placeholder="Apellido paterno" size="15" maxlength="30" title="Apellido paterno"></td>
+
+			<td><label for="apellidom">Apellido materno: </label>
+			<input type="text" name="apellidom" id="apellidom" placeholder="Apellido materno" size="15" maxlength="30" title="Apellido materno"></td>
+		</tr>
+		<tr>
+			<td><label for="usuario">Nombre de usuario: </label>
+			<input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" size="15" maxlength="30" title="Nombre de usuario" required></td>
+
+			<td><label for="pass">Contraseña: </label>
+			<input type="password" name="pass" id="pass" size="20" maxlength="20" title="Contraseña" placeholder="Contraseña" required></td>
+			
+			<td><label for="fechareg">Fecha de registro: </label>
+			<input type="date" name="fechareg" id="fechareg" title="Fecha de registro" placeholder="Fecha de registro"></td></br>
+			</tr>
+		</tbody>
+	    </table>
+		</fieldset>
+		
+		<fieldset>	
+			<legend style="font-family: calibri; color: white">Datos generales</legend>
+			<table>
+			<tbody>
+		<tr>
+			<td>País: </br>
+			<select label="País" id="País" size="5">
+				<optgroup label="País">
+					<option value="1" selected>México</option>
+				<option value="2">Brazil</option>
+				<option value="3">Colombia</option>
+				<option value="4">Chile</option>
+				<option value="5">Costa Rica</option>
+				<option value="6">Argentina</option>
+				<option value="7">Guatemala</option>
+				</optgroup>
+			</select>
+			</td>
+
+			<td>Ciudad: </br>
+			<select label="Ciudad" id="Ciudad" size="5">
+				<optgroup label="Ciudad">
+					<option value="1" selected>CDMX</option>
+				<option value="2">São Paulo</option>
+				<option value="3">Medellín</option>
+				<option value="4">Santiago</option>
+				<option value="5">San José</option>
+				<option value="6">Buenos Aires</option>
+				<option value="7">Ciudad de Guatemala</option>
+				</optgroup>
+			</select>
+			</td>
+
+			<td><label for="calle">Calle: </label>
+			<input type="text" name="calle" id="calle" size="20" maxlength="20" title="Calle" placeholder="Calle" ></td>
+		</tr>
+		<tr>
+			<td><label for="numcas">Numero de casa: </label>
+			<input type="number" name="numcas" id="numcas" size="20" maxlength="20" title="Numero de casa" placeholder="Numero de casa"></td>
+
+			<td><label for="colonia">Colonia: </label>
+			<input type="text" name="colonia" id="colonia" size="20" maxlength="20" title="Colonia" placeholder="Colonia"></td>
+
+			<td><label for="correo">Correo email: </label>
+			<input type="email" name="correo" id="correo" required></td>
+
+			
+		</tr>
+			<td><label for="rfc">RFC: </label>
+			<input type="text" name="rfc" id="rfc" size="20" maxlength="20" title="RFC" placeholder="RFC" required></td>
+
+			<td><label for="cp">CP: </label>
+			<input type="number" name="cp" id="cp" size="20" maxlength="20" title="CP" placeholder="CP" required></td>
+
+			<td><input type="checkbox" name="terminos" id="terminos" required>
+			<label for="terminos">Acepto terminos y condiciones</label></td>
+
+			<td></br></td>
+			<td></br></td>
+
+			<td style="text-align: center;"><input type="submit" name="enviar" id="enviar" value="Enviar datos">
+			<input type="reset" name="restablecer" id="restablecer" value="Restablecer datos"></td>
+
+			</tbody>
+	    </table>
+		</fieldset>
+	</form>
+
+	<footer style="text-align:right; font-size: 20px; color:white; font-family: Berlin Sans FB; ">Febrero 2025, SLP</footer>
+</body>
+</html>
