@@ -1,0 +1,29 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	background-color: lightskyblue;
+	padding: 0;
+	margin: 0;
+}
+li a{
+	display: block; /*elemento en bloque, se va a manejar como hipervinculo toda el area del elemento de la lista*/
+	background-color: skyblue;
+	padding: 12px;/*sin margen para que no quede separado, segun esta práctica*/
+	text-decoration: none; /*para no tener ningun subrayado*/
+	font-family: arial, verdana, sans-serif;
+}
+
+li a:hover{
+	background-color: skyblue;
+	color: white;
+}
+
+li a.activo{ /*es la clase, en este caso es "activo" por que asi esta definida en el archivo html*/
+	background-color: darkblue;
+	color: white;
+}
+
+li a:hover:not{
+	background-color: skyblue;
+	color: white;
+}
