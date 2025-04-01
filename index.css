@@ -88,3 +88,8 @@ body{font-family: "Dosis", sans-serif;
 
 .galeria p:hover{
     color: #ffcc00;}
+
+footer{
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+}
