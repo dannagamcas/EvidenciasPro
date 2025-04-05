@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+.contenedor, .contenedor2, .contenedor3, .contenedor4, .contenedor5, .contenedor6, .contenedor7, .contenedor8 {
+    padding: 2px; 
+    margin: 1px; 
+    border: 1px solid gray;
+    background-color: #fff;
+}
+
+.t1 {
+    color: red; 
+    font-size: 2pt; 
+}
+
+.t2 {
+    color: orange; 
+    font-size: 1.5cm; 
+}
+
+.t3 {
+    color: yellow; 
+    font-size: 20mm; 
+}
+
+.t4 {
+    color: green; 
+    font-size: 5in; 
+}
+
+.t6 {
+    color: blue; 
+    font-size: 10pc; 
+}
+
+.t7 {
+    color: purple; 
+    font-size: 10em
+}
+
+.t8 {
+    color: pink; 
+    font-size: 10rem; 
+}
+
+.t9 {
+    color: white; 
+    font-size: 10%; 
+}
