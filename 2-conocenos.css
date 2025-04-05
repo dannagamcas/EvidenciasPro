@@ -35,12 +35,17 @@ body{font-family: "Dosis", sans-serif;
 
 .top h2{text-align: center;}
 
-.photos{display: flex;
+.photos {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
-.photos img{width: 50%;
-    margin: 1%;}
+.photos iframe {
+    width: 50%;  
+    margin: 2%;
+    height: 70%; 
+}
 
 .header img {
     width: 50px; 
@@ -55,3 +60,5 @@ footer{
     font-family: "Dosis", sans-serif;
     font-size: 15px;
 }
+
+
