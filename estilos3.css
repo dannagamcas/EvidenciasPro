@@ -34,10 +34,12 @@ li a:hover:not{
 .capa1{
 	margin-left: 23%;
 }
+
 @font-face{
 	font-family: "fuente1";
 	src: url("Kanit/Kanit-Thin.ttf") format("truetype");
 }
+
 p{
 	text-align: justify;
 	font-family: 'fuente1';
