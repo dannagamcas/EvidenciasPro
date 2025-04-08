@@ -1,0 +1,57 @@
+body {
+  background-color: #c9ec44;
+  text-align: center;
+}
+
+h1 {
+  font-family: Berlin Sans FB;
+  color: #fe4b2b;
+}
+
+h2 {
+  font-family: Berlin Sans FB;
+  color: #2b88fe;
+}
+
+img {
+  border: 3px solid blue;
+  border-radius: 30px;
+  height: 200px;
+  width: auto;
+}
+
+.galeria-container {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-area {
+  display: inline-block;
+  position: relative;
+}
+
+.galeria {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hover:hover .galeria {
+  display: flex;
+}
+
+.galeria .imagen {
+  margin: 12px;
+}
+
+.boton {
+  background-color: orange;
+  padding: 15px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
