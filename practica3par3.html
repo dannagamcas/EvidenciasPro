@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Práctica 3</title>
+
+	<link rel="stylesheet" href="practica3par3estilo.css">
+	<script src="sessionstorage.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  	<script type="text/javascript" src="practica3par3.js"></script>
+<body>
+  <h1>Formulario de Diagnóstico: El Océano</h1>
+
+  <form id="quizForm">
+    <div class="pregunta">
+      <p>1. ¿Cuál es el océano más grande del mundo?</p>
+      <input type="radio" name="q1" value="0">Atlántico<br>
+      <input type="radio" name="q1" value="1">Pacífico<br>
+      <input type="radio" name="q1" value="0">Índico<br>
+    </div>
+
+    <div class="pregunta">
+      <p>2. ¿Qué porcentaje de la Tierra está cubierto por océanos?</p>
+      <input type="radio" name="q2" value="1">71%<br>
+      <input type="radio" name="q2" value="0">50%<br>
+      <input type="radio" name="q2" value="0">85%<br>
+    </div>
+
+    <div class="pregunta">
+      <p>3. ¿Cuál es la zona más profunda del océano?</p>
+      <input type="radio" name="q3" value="1">Fosa de las Marianas<br>
+      <input type="radio" name="q3" value="0">Dorsal Mesoatlántica<br>
+      <input type="radio" name="q3" value="0">Gran Barrera de Coral<br>
+    </div>
+
+    <button type="button" onclick="evaluar()">Enviar respuestas</button>
+  </form>
+
+  <div id="resultado"></div>
+  <canvas id="grafico" width="400" height="200"></canvas>
+  <button onclick="descargarPDF()">Descargar PDF</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
