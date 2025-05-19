@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exámen Parcial</title>
+	<script type="text/javascript" src="examenparcial.js"></script>
+	<link rel="stylesheet" href="examenparcial.css">
+</head>
+<body>
+	<h1>Pagos de estacionamiento</h1>
+	
+	<form action="" method="post" enctype="text/plain">
+		<div class="estacion">
+			<label for="horas">Horas de estacionamiento</label>
+       		<input type="text" name="horas" id="horas" placeholder="Escribir las horas"></br>
+		</div>
+		
+
+       	<div class="seleccionar">
+       		<label for="auto">Tipo de auto:</label></br>
+		<select name="auto" id="auto" class="auto">
+			<option value="20"> Auto chico $20</option>
+			<option value="30"> Camioneta $30</option>
+			<option value="40">Camión $40</option>
+		</select></br>
+       	</div>
+       	
+
+		<input type="button" name="multi" id="multi" value="Obtener total a pagar" onclick="multiplicar()">
+		
+	</form>
+
+	<h2>El resultado es:</h2>
+    Total a pagar:
+    <p name="resultado" id="resultado"></p>
+
+</body>
+</html>
