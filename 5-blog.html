@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletos - Marine Rescue</title>
+    <link rel="stylesheet" href="6-boletos.css">
+    <script type="text/javascript" src="6-boletos.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Dosis:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <a href="1-indexPag.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <h1><span style="color: #ffcc00;">Boletos</span></h1>
+            </header>
+        </div>
+        <div class="others">
+
+            <div class="main">
+                <div class="photo">
+                    <img src="imgs/enjoy.jpg" alt="">
+                </div>
+                <div class="boletos">
+                    <p>Contamos con diferentes precios:</p>
+                    <p>Niños - $150</p>
+                    <p>Adultos - $200</p>
+                    <p>Tercera edad - $150</p>
+                </div>
+                <form id="ticket-form" class="boletos">
+                    <p>Selecciona tus boletos:</p>
+
+                    <label for="niños">Niños ($150):</label>
+                    <input type="number" id="niños" name="niños" min="0" value="0"><br><br>
+
+                    <label for="adultos">Adultos ($200):</label>
+                    <input type="number" id="adultos" name="adultos" min="0" value="0"><br><br>
+
+                    <label for="tercera">Tercera edad ($150):</label>
+                    <input type="number" id="tercera" name="tercera" min="0" value="0"><br><br>
+
+                    <button type="button" onclick="window.open('https://outlook.office.com/mail/', '_blank')">Comprar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Acuario</title>
-    <script src="5-blog.js"></script>
-    <link rel="stylesheet" href="5-blog.css">
+    <script src="bloglocalstorage.js"></script>
+    <link rel="stylesheet" href="blogestilo.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +68,7 @@
 
 </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <header>
-                <a href="1-indexPag.html" class="back-button">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-                <h1><span class="highlight">Blog</span></h1>
-            </header>
-        </div>
-        
-        <div class="main-content">
-            <div class="mission-section">
-                <h2>Si tienes dudas o comentarios sobre el acuario no dudes en comentarlo abajo con tu nombre!</h2>
-                <section id="cajaformulario">
-                <form name="formulario">
-                <p>Nombre:<br><input type="text" name="clave" id="clave"></p>
-                <p>Escribe tu duda o comentario aquí:<br><textarea name="text" id="texto"></textarea></p>
-                <p><input type="button" name="guardar" id="guardar"
-                value="Guardar datos"></p>
-                </form>
-                </section>
-                <section id="caja">
-                No hay información disponible
-                </section>
-            </div>
-        </div>
-    </div>
+
 
     <footer>
         <p>Página Web desarrollada para la materia de Programación Web I. Primavera 2025.</p>
@@ -52,7 +79,9 @@
             <a href=""><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-<script>
+</body>
+</html>
+    <script>
 window.addEventListener('mouseover', initLandbot, { once: true });
 window.addEventListener('touchstart', initLandbot, { once: true });
 var myLandbot;
