@@ -1,19 +1,65 @@
 body {
-  background-color: #f1b6ef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9ff;
+    padding: 40px;
+    color: #333;
+    text-align: center;
 }
 
 h1 {
-  font-family: Berlin Sans FB;
-  color: #f8f18c;
-  text-align: center;
+    color: #0077b6;
+    margin-bottom: 30px;
 }
 
-h2 {
-  font-family: Berlin Sans FB;
-  color: #8ce9f8;
-  text-align: center;
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.forms{
-	
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="button"] {
+    margin-top: 15px;
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #023e8a;
+}
+
+#datos {
+    margin-top: 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: #005f73;
 }
